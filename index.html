@@ -17,7 +17,11 @@
 
 <body>
     <div class="calculator">
-        <div class="visor" id="visor"></div>
+        <div class="visor">
+            <div class="previous" id="previous"></div>
+            <div class="operation" id="operation"></div>
+            <div class="actual" id="actual"></div>
+        </div>
 
         <div class="numbers" id="numbers">
             <div class="number">9</div>
@@ -33,13 +37,14 @@
         </div>
 
         <div class="operators" id="operators">
-            <div class="operator">C</div>
-            <div class="operator">CE</div>
-            <div class="operator">x</div>
-            <div class="operator">%</div>
-            <div class="operator">+</div>
-            <div class="operator">-</div>
-            <div class="operator">=</div>
+            <div class="operator" data-op="clear">C</div>
+            <div class="operator" data-op="clearNumber">CE</div>
+            <div class="operator" data-op="multiplication">x</div>
+            <div class="operator" data-op="division">%</div>
+            <div class="operator" data-op="addition">+</div>
+            <div class="operator" data-op="subtraction">-</div>
+            <div class="operator" data-op="changeSign">(-x)</div>
+            <div class="operator" data-op="equal">=</div>
         </div>
     </div>
 </body>
